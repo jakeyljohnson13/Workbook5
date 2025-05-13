@@ -23,7 +23,6 @@ public class Main {
                 System.out.println(((House) myStuff.get(i)).getAddress());
             }
         }
-
-
+        //Asset asset = new Asset("","",0);
     }
 }
