@@ -16,7 +16,6 @@ public class Main {
         for (Asset asset : myStuff){
             System.out.println("==============================");
             System.out.println(asset.getDescription());
-            System.out.println("------------------------------");
             System.out.println(asset.getDateAcquired() + " | " + asset.getOriginalCost() + " | " + asset.getValue());
         }
 
