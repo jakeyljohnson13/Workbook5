@@ -13,10 +13,15 @@ public class Main {
         myStuff.add(commuter);
         Vehicle toy = new Vehicle("Racer","11-30-2025",560000,"Porsche 911",2024,4000);
         myStuff.add(toy);
-        for (Asset asset : myStuff){
+        for (int i = 0; i<myStuff.size(); i++){
             System.out.println("==============================");
-            System.out.println(asset.getDescription());
-            System.out.println(asset.getDateAcquired() + " | " + asset.getOriginalCost() + " | " + asset.getValue());
+            System.out.println(myStuff.get(i).getDescription());
+            System.out.println(myStuff.get(i).getDateAcquired() + " | " + myStuff.get(i).getOriginalCost() + " | " + myStuff.get(i).getValue());
+            if (myStuff.get(i) instanceof Vehicle){
+                System.out.println(((Vehicle) myStuff.get(i)).getYear() + " | " + ((Vehicle) myStuff.get(i)).getMakeModel());
+            } else if (myStuff.get(i) instanceof House) {
+                System.out.println(((House) myStuff.get(i)).getAddress());
+            }
         }
 
 
